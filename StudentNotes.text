@@ -1,0 +1,43 @@
+document.title="AIQ" === Pada bagian ini saya membuat judul dari website yang saya buat
+
+
+const tabel = document.getElementById('tabel') 
+const tombolKlik = document.getElementsByClassName('tombol-menu')[0]; == kemudian disini urutan line 4,5 dan 6 yaitu pembuatan variabel dengan menampung nilai dari masing" id dan class yang sudah di buat pada html
+const menu = document.getElementsByClassName('menu')[0]; === Dan juga supaya memudahkan saaat proses styling dan lainnya  
+
+
+tombolKlik.onclick = function() { == Membuat ini bertujuan supaya nanti saat garis tiga yang berada di variabel tombolklik ini bisa di klik
+    menu.classList.toggle('active');
+}
+menu.onclick = function() {=== Membuat ini supaya nantinya ketika garis tiga di klik maka isi dari variabel menu seperti deskripsi, profile dan lainnya bisa muncul
+    menu.classList.toggle('active');
+}
+
+
+
+tabel.style.border = 'none'
+tabel.style.fontSize = '23px'
+tabel.style.color = '#364f6b'  ==== untuk line 18-23 ini merupakan pemberian styling untuk variabel tabel  yang dimana sebelumnya sudah mengambil nilai dari id tabel supaya bisa untuk mempercantik bagian tabel
+tabel.style.background = ' #78a4d7'
+tabel.style.padding = '15px'
+tabel.style.borderRadius = '10px'
+
+
+
+function klik(){ === memberikan function klik (onclick)agar nantinya ketika tombol di klik akan muncul kalimat seperti di bawah
+    alert('Terimakasih Sudah Datang di Website kami. Jangan Lupa Hadir Lagi yaaa 👏')
+}
+
+
+function test(){ === memberikan function test (onemouseover) agar nantinya ketika mouse diarahkan ke tombol maka tombol akan ke trigger berupa perubahan text, warna dan transisinya
+    tabel.textContent = 'Terimakasih'
+    tabel.style.background = 'Lavender'
+    tabel.style.transition ='1s'
+
+    
+}
+function test2(){// memberikan function test2 (onemouseout) agar nantinya ketika mouse dipindahkan setelah diarahkan ke tombol sebelumnya maka tombol akan ke trigger berupa perubahan text, warna dan transisi
+    tabel.textContent = 'Keluar'
+    tabel.style.background = '#78a4d7'
+    tabel.style.transition ='1s'
+}

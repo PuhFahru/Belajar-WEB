@@ -1,0 +1,383 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+header nav .menu{
+  top: 0;
+  line-height: 50px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  background-image: linear-gradient(to right, #B4E4FF , #ECF2FF);
+}
+.header {
+  width: 100%;
+  margin: 10px;
+}
+
+.logo {
+  float: left;
+  margin-left: 5%;
+  padding-top: 3px;
+  text-shadow: #78a4d7;
+  
+}
+
+.logo a {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  font-family: courier;
+  color: #78a4d7;
+  
+
+}
+
+.menu {
+  float: right;
+}
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 65px;
+  background-image: linear-gradient(to right, #B4E4FF , #ECF2FF);
+  position: sticky;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0px 10px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  transition: 1.5s;
+  text-decoration: underline;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+#home img {
+  margin-left: 240px;
+  width: 30%;
+  position: relative;
+  top: 80px;
+  z-index: -1;
+}
+.deskripsi{
+  margin-left: 0;
+  text-align: justify;
+}
+span{
+  font-size: 30px;
+  font-weight: bold
+}
+.kolom img{
+  width: 50%;
+}
+.kolom {
+  margin-top: 170px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+  padding-left: 0px;
+}
+
+.kolom .deskripsi  {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #78a4d7;
+  padding-top: 40px;
+}
+.kolom h2{
+  font-size: 25px;
+}
+
+.kolom .info2  {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #78a4d7;
+  padding-top: 40px;
+}
+.kolom .info2 .coba{
+  font-size: 90px;
+}
+
+
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+}
+
+a.tbl1 {
+  margin-top: 20px;
+  font-size: 23px;
+  color: #364f6b;
+  font-family:sans-serif;
+  padding: 15px 20px 15px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+}
+
+a.tbl1:hover {
+  background: #78a4d7;
+  text-decoration: underline;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footer-section {
+  width: 20%;
+  margin: 0 auto;
+}
+
+h3 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+}
+
+#bawahhh {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  margin-top: 50px;
+  background-color: #364f6b;
+  color: #dedede;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 90%;
+    
+  }
+  .logo a {
+    display: block;
+    width: 60%;
+    text-align: center;
+    
+    
+  }
+  nav .menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav .menu ul {
+    text-align: center;
+    margin: auto;
+    line-height: 60px;
+  }
+
+  nav .menu ul li {
+    display: inline-block;
+    float: none;
+    
+  }
+  section {
+    display: block;
+  }
+
+  section img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}
+.tombol-menu {
+  position: absolute;
+  top: 35px;
+  right: 16px;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 26px;
+}
+
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #3f72af;
+}
+
+@media screen and (max-width: 800px) {
+  .logo a {
+    display: block;
+    margin-left: 17px;
+    
+    
+  }
+  .tombol-menu {
+    display: flex;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .menu.active {
+    display: flex;
+  }
+  
+  nav ul li {
+    width: 80%;
+    border-bottom: 1px solid #333333;
+  }
+  #home img{
+    width: auto;
+    margin-left: -3px;
+    
+  }
+}
+.asaide{
+  width: 95%;
+  padding: 10px;
+  background-image: linear-gradient(to right, #B4E4FF , #ECF2FF);
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  
+}
+.box{
+  width: 270px;
+  height: 300px;
+  background-image: linear-gradient(to right, #fdfdfd , #ECF2FF);
+  margin: 0px 10px;
+  box-shadow: -1px 1px 11px 4px rgba(86,203,216,0.72);
+  -webkit-box-shadow: -1px 1px 11px 4px rgba(86,203,216,0.72);
+  -moz-box-shadow: -1px 1px 11px 4px rgba(86,203,216,0.72);
+  cursor: pointer;
+  transition: 0.9s;
+  -webkit-transition: 0.9s;
+  -moz-transition: 0.9s;
+  -ms-transition: 0.9s;
+  -o-transition: 0.9s;
+  
+}
+.box:hover{
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 45%;
+}
+#info{
+  top: 50px;
+  margin-top: -6.5%;
+}
+.kolom p{
+  font-size: 20px;
+  text-align: justify;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #78a4d7;
+}
+.kolom .coba{
+  padding-right: 35%;
+  font-size: 25px;
+  color: #364f6b;
+
+}
+.asaide .box{
+  height: 90%;
+  width: 270px;
+  
+}
+.asaide .box img{
+  padding-left: 19px;
+  padding-right: 1px;
+  padding-top: 5px;
+  width: 230px;
+  min-height: 90px;
+  display: flex;
+  
+}
+.asaide .box p{
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+  margin: 2px;
+  color: #B4E4FF;
+  
+  
+}
+.asaide .box h5{
+  text-align: center;
+  margin-top: 2px;
+  color: #172638;
+  font-size: 17px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #B4E4FF , #ECF2FF);
+}
+.asaide .box ul li{
+  text-align: center;
+  color: #333333;
+  font-size: 15.5px;
+  font-weight: bold;
+}
+
